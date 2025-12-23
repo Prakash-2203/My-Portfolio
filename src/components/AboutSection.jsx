@@ -4,11 +4,13 @@ export const AboutSection = () => {
   return (
     <section id="about" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
+        {/* About Heading */}
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           About <span className="text-primary">Me</span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        {/* About Content */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
           {/* Left Content */}
           <div className="space-y-6 text-center md:text-left">
             <h3 className="text-2xl font-semibold">
@@ -87,6 +89,47 @@ export const AboutSection = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Education Section (Added inside About) */}
+        <h3 className="text-2xl md:text-3xl font-bold mb-10 text-center">
+          <span className="text-primary">Education</span>
+        </h3>
+
+        <div className="grid grid-cols-1 gap-8">
+          {/* MCA */}
+          <div className="gradient-border p-6 card-hover">
+            <h4 className="text-xl font-semibold mb-1">
+              Master of Computer Applications (MCA)
+            </h4>
+
+            <p className="text-primary text-sm mb-3">
+              PSG College Of Technology · 2023 – 2025
+            </p>
+
+            <p className="text-muted-foreground">
+              Focused on software development and computer applications.
+              Gained knowledge in Java, web technologies, databases, and
+              application development through coursework and projects.
+            </p>
+          </div>
+
+          {/* BSc Mathematics */}
+          <div className="gradient-border p-6 card-hover">
+            <h4 className="text-xl font-semibold mb-1">
+              Bachelor of Science (B.Sc) – Mathematics
+            </h4>
+
+            <p className="text-primary text-sm mb-3">
+              Government Arts and Science College for Men · 2019 – 2022
+            </p>
+
+            <p className="text-muted-foreground">
+              Built a strong foundation in mathematical concepts, logical
+              reasoning, and analytical thinking. Developed interest in
+              programming and problem-solving.
+            </p>
           </div>
         </div>
       </div>
